@@ -4,6 +4,8 @@
 	<title>Module2 Assignment1</title>
 </head>
 
+
+
 <style>
 .row {
 	width: 100%;
@@ -13,17 +15,26 @@
 	box-sizing: border-box;
 }
 
-section {
+div {
+	position: relative;
+	margin-right: 25px;
+	margin-left: 25px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 35px;
+}
+
+div div {
 	position: relative;
 	border: 1px solid black;
-	margin-right: 20px;
-	margin-left: 20px;
+	margin-right: 25px;
+	margin-left: 25px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding-top: 35px;
 
 }
-section div {
+div p {
 	border: 1px solid black;
 	position: absolute;
 	top: 0px;
@@ -75,6 +86,34 @@ section div {
 	.col-lg-3 {
 		width: 25%;
 	}
+	.col-lg-4 {
+		width: 33%;
+	}
+	.col-lg-5 {
+		width: 41.66%;
+	}
+	.col-lg-6 {
+		width: 50%;
+	}
+	.col-lg-7 {
+		width: 58.33%;
+	}
+	.col-lg-8 {
+		width: 66.66%;
+	}
+	.col-lg-9 {
+		width: 74.99%;
+	}
+	.col-lg-10 {
+		width: 83.33%;
+	}
+	.col-lg-11 {
+		width: 91.66%;
+	}
+	.col-lg-12 {
+		width: 100%;
+	}
+
 }
 
 /********* Medium devices only *****/
@@ -92,6 +131,33 @@ section div {
 	.col-md-3 {
 		width: 25%;
 	}
+	.col-md-4 {
+		width: 33%;
+	}
+	.col-md-5 {
+		width: 41.66%;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.col-md-7 {
+		width: 58.33%;
+	}
+	.col-md-8 {
+		width: 66.66%;
+	}
+	.col-md-9 {
+		width: 74.99%;
+	}
+	.col-md-10 {
+		width: 83.33%;
+	}
+	.col-md-11 {
+		width: 91.66%;
+	}
+	.col-md-12 {
+		width: 100%;
+	}
 }
 
 /********* Small devices only *****/
@@ -100,14 +166,41 @@ section div {
 		float: left;
 		break-before: 1px solid black;
 	}
-	.col-md-1{
+	.col-sm-1{
 		width: 8.33%;
 	}
-	.col-md-2 {
+	.col-sm-2 {
 		width: 16.66%;
 	}
-	.col-md-3 {
+	.col-sm-3 {
 		width: 25%;
+	}
+	.col-sm-4 {
+		width: 33%;
+	}
+	.col-sm-5 {
+		width: 41.66%;
+	}
+	.col-sm-6 {
+		width: 50%;
+	}
+	.col-sm-7 {
+		width: 58.33%;
+	}
+	.col-sm-8 {
+		width: 66.66%;
+	}
+	.col-sm-9 {
+		width: 74.99%;
+	}
+	.col-sm-10 {
+		width: 83.33%;
+	}
+	.col-sm-11 {
+		width: 91.66%;
+	}
+	.col-sm-12 {
+		width: 100%;
 	}	
 }
 </style>
@@ -116,10 +209,9 @@ section div {
 <h style="font-size: 175%"> Assignment1 of HTML coursera </h>
 
 <div class="row"> 
-<section id="sec1" class="col-lg-3 col-md-6"> <div id="tit1">Step1 </div> If you haven't already) Create a GitHub.com account and a repository that you will use for this class.(If you haven't already) Follow the Development Setup Video (beginning of Module 1) instructions on how to create a repository and set it up such that you can host and view your finished web pages on GitHub Pages, i.e., GitHub.io domain name. You will need to provide that URL for your peer review.Create a folder in your repository that will serve as a container folder for your solution to this assignment. You can call it whatever you want. For example, module2-solution or mod2_solution, etc. Create an index.html file inside the solution container folder, e.g., module2-solution/index.html.</section>
-<section id="sec2" class="col-lg-3 col-md-6"> <div id="tit2">Step2 </div> The implementation of the page you will be creating should follow the mockup illustrations shown below. You are provided 3 mockups: desktop, tablet, and mobile. Your implementation has to be JUST 1 page, NOT 3 pages. In other words, you will be creating a single, responsive page.Your page must include a CSS file. No inline styles allowed. Your CSS file should be placed into a css folder under the solution container folder, e.g., module2-solution/css.</section>
-<section id="sec3" class="col-lg-3 col-md-6"> <div id="tit3">Step3 </div> You are NOT allowed to use any CSS (or Javascript) framework for this assignment, including Twitter Bootstrap CSS Framework. No framework CSS files should even be referenced in your index.html, even if you are not using them. However, you MAY use the simple responsive framework we developed in Lecture 24 as a starting point for this assignment.
-</section>
+	<div id="sec1" class="col-lg-3 col-md-6"> <p id="tit1">Step1 </p> If you haven't already) Create a GitHub.com account and a repository that you will use for this class.(If you haven't already) Follow the Development Setup Video (beginning of Module 1) instructions on how to create a repository and set it uzp such that you can host and view your finished web pages on GitHub Pages, i.e., GitHub.io domain name. You will need to provide that URL for your peer review.Create a folder in your repository that will serve as a container folder for your solution to this assignment. You can call it whatever you want. For example, module2-solution or mod2_solution, etc. Create an index.html file inside the solution container folder, e.g., module2-solution/index.html.</div>
+	<div id="sec2" class="col-lg-3 col-md-6"> <p id="tit2">Step2 </p> The implementation of the page you will be creating should follow the mockup illustrations shown below. You are provided 3 mockups: desktop, tablet, and mobile. Your implementation has to be JUST 1 page, NOT 3 pages. In other words, you will be creating a single, responsive page.Your page must include a CSS file. No inline styles allowed. Your CSS file should be placed into a css folder under the solution container folder, e.g., module2-solution/css.</div>
+	<div id="sec3" class="col-lg-3 col-md-6"> <p id="tit3">Step3 </p> You are NOT allowed to use any CSS (or Javascript) framework for this assignment, including Twitter Bootstrap CSS Framework. No framework CSS files should even be referenced in your index.html, even if you are not using them. However, you MAY use the simple responsive framework we developed in Lecture 24 as a starting point for this assignment.</div>
 </div>
 
 </body>
